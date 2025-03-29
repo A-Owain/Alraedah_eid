@@ -25,8 +25,8 @@ if name:
     draw = ImageDraw.Draw(base_image)
 
     # Load fonts
-    font_size_name = 70
-    font_size_position = 40
+    font_size_name = 30
+    font_size_position = 20
     # font_size_name = 150
     # font_size_position = 100
     font = ImageFont.truetype(FONT_PATH, font_size_name)
@@ -41,7 +41,7 @@ if name:
     # y_name = 4300
 
     # Draw name without shadow
-    draw.text((x_name, y_name), bidi_name, font=font, fill="#ea2f2f") # red
+    draw.text((x_name, y_name), bidi_name, font=font, fill="#ffffff") # red
 
     # Draw position if provided
     if position.strip():
