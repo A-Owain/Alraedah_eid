@@ -7,7 +7,7 @@ import os
 
 # Constants
 IMAGE_PATH = "eid-fitr.png"
-FONT_PATH = "alfont_com_HONORSansArabicUI-R.ttf"  # Ensure this font file is in the repo root
+FONT_PATH = "alfont_com_HONORSansArabicUI-M"  # Ensure this font file is in the repo root
 
 st.set_page_config(page_title="Eid Greeting Generator", layout="centered")
 st.title("Eid Greeting Generator")
