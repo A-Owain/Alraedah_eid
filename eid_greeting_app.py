@@ -50,8 +50,8 @@ if name:
         pos_bbox = position_font.getbbox(bidi_pos)
         pos_width = pos_bbox[2] - pos_bbox[0]
         x_pos = (image_width - pos_width) / 2
-        y_pos = y_name + 120
-        draw.text((x_pos, y_pos), bidi_pos, font=position_font, fill="#EA2F2F")  # red
+        y_pos = y_name + 60
+        draw.text((x_pos, y_pos), bidi_pos, font=position_font, fill="#ffffff")  # red
 
     # Convert to bytes
     img_bytes = io.BytesIO()
