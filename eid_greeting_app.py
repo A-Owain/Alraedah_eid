@@ -53,14 +53,18 @@ if name:
         y_pos = y_name + 55
         draw.text((x_pos, y_pos), bidi_pos, font=position_font, fill="#ffffff")  # red
 
-    # Convert to bytes
+    # Convert image to bytes for display and download
     img_bytes = io.BytesIO()
     base_image.save(img_bytes, format='PNG')
     img_bytes.seek(0)
 
-    # Show image and allow download
+    # Show image
     st.image(img_bytes, caption="بطاقة معايدتك | Your Greeting Card", use_container_width=True)
 
+    # Reset pointer before using the buffer again
+    img_bytes.seek(0)
+
+    # Provide download button
     st.download_button(
         label="تنزيل | Download",
         data=img_bytes,
